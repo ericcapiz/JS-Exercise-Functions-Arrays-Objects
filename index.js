@@ -108,9 +108,16 @@ console.log(temperatureInF(24, 'C'));
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
+function makePersonObject(id, name, email) {
   /* code here */
+  const person = {
+ id: id,
+ name: name,
+ email: email
+  }
+  return person;
 }
+console.log(makePersonObject(3, 'eric', 'eric@gmail.com'));
 
 /**
  * ### Challenge `getName`
@@ -125,9 +132,16 @@ function makePersonObject(/* code here */) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(/* code here */) {
+function getName(id, name, email) {
   /* code here */
-}
+  const person = {
+    id: id,
+    name: name,
+    email: email
+     }
+     return `Hello my name is ${name}!`;
+   }
+   console.log(getName(3, 'eric', 'eric@gmail.com'));
 
 
 /**
@@ -145,9 +159,14 @@ function getName(/* code here */) {
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
+function appleIndex() {
   /* code here */
+  const fruit = ['orange', 'grape', 'apple', 'banana', 'mango'];
+  return fruit.indexOf('apple');
 }
+console.log(appleIndex());
+
+
 
 /**
  * ### Challenge `isItAnApple`
