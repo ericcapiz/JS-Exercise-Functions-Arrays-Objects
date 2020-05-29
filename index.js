@@ -202,6 +202,14 @@ function isItAnApple(item) {
 console.log(isItAnApple('apple'));
 
 
+
+
+
+
+
+
+
+
 // ⭐️ Example Test Data ⭐️
 
 var inventory = [
@@ -240,6 +248,14 @@ function get3rdCar(inventory) {
 // 👇 COMPLETE YOUR WORK BELOW 👇
 
 
+
+
+
+
+
+
+
+
 /**
  * ### Challenge `getCarInfoByIndex`
  * 
@@ -252,9 +268,18 @@ function get3rdCar(inventory) {
  * For example, if getCarInfoByIndex is invoked with the inventory and the number 0,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoByIndex(inventory, index) {
-  /* code here */
-}
+// const array = require("./data/inventory")
+
+// function getCarInfoByIndex(inventory, index) {
+  
+
+// }
+// console.log(array);
+
+
+
+
+
 
 /**
  * ### Challenge `getLastCarInfo`
@@ -266,10 +291,22 @@ function getCarInfoByIndex(inventory, index) {
  * 
  * For example, if getLastCarInfo is invoked passing the inventory inside /data/inventory.js,
  * it will return `This is a Lincoln Town Car`.
+ * 
 */
-function getLastCarInfo(/* code here */) {
-  /* code here */
+
+const array = require("./data/inventory")
+
+function getLastCarInfo(inventory) {
+  console.log('This is a ' + inventory[(inventory.length -1)].car_make + ' ' + inventory[(inventory.length - 1)].car_model);
 }
+getLastCarInfo(array);
+
+
+
+
+
+
+
 
 /**
  * ### Challenge `getModelYears`
@@ -283,6 +320,19 @@ function getLastCarInfo(/* code here */) {
 function getModelYears(/* code here */) {
   /* code here */
 }
+
+
+
+
+
+
+// ############STRETCH GOALS BELOW#################
+
+
+
+
+
+
 
 /**
  * ### Challenge `getCarInfoById`
