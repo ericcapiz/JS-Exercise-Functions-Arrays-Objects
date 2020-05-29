@@ -159,12 +159,16 @@ function getName(id, name, email) {
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex() {
+function appleIndex(item) {
   /* code here */
   const fruit = ['orange', 'grape', 'apple', 'banana', 'mango'];
-  return fruit.indexOf('apple');
+  for (let i = 0; i < fruit.length; i++){
+    if (fruit[i] === item){
+      return i;
+    }
+  }
 }
-console.log(appleIndex());
+console.log(appleIndex('apple'));
 
 
 
@@ -183,11 +187,19 @@ console.log(appleIndex());
  * passing in [ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ] as the argument,
  * the returned value should be: [ false, true, false, false, true, false ].
 */
-function isItAnApple(/* code here */) {
-  /* code here */
+function isItAnApple(item) {
+  const fruit = ['orange', 'apple', 'banana', 'apples', 'apple', 'mango'];
+  const arr = [];
+  for (let i = 0; i < fruit.length; i++){
+    if (fruit[i] === item){
+      arr.push(true);
+    } else {
+      arr.push(false);
+    }
+  }
+  return arr;
 }
-
-
+console.log(isItAnApple('apple'));
 
 
 // ⭐️ Example Test Data ⭐️
