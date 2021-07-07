@@ -1,0 +1,41 @@
+ARRAY
+
+let users = ['Matt' , 'Cam' , 'Anthony' , 'Bryant']
+
+users[2] //returns Anthony\\
+
+users.push('aaron') //adds the name aaron to end of the array\\
+
+users.pop( ) //removes last item in array\\
+
+Array.shift is like pop, except it removes from the beginning of an array.
+Array.unshift is like push, but adds to the beginning of an array. 
+
+
+users.splice(3,1) //removes spot number 3 only\\
+users.splice(3,2)\\removes spot 3 and the 2nd name after that//
+
+FOR LOOP ARRAY:
+
+
+let names = ['jim', 'jack', 'jones', 'john']
+
+for(let i=0; i < 3; i++){
+  console.log(`Hello ${names[i]}, how are you?`);
+}
+-----------------------------------------------------
+OBJECTS
+
+
+const student = {
+
+name: 'Eric',
+address: '123 n fake st',
+cars: ['honda', 'toyota', 'bmw'],
+student: true,
+userSaysHi: funtcion (){
+console.log(this.name + " says hi.");
+},
+};
+user.userSaysHi();
+student.phone= '4433073937' //adds phone to the student object\\
